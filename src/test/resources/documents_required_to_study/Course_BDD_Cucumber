@@ -1,0 +1,63 @@
+1. What is BDD?
+Ans: Behavior Driven Development. A simple text file will be created. Simple English will be written.
+These English words combine together to form Test Scenarios
+Remember in Cucumber - there are no Test Cases. There are only Test Scenarios
+
+2. What is Cucumber?
+Ans: Cucumber is a Testing Approach which implements BDD
+      https://cucumber.io/
+      There is a language and it is known as GHERKIN language
+      GHERKIN language uses Given, When, Then, And, But      
+Given I open a Chrome Browser
+And I Enter the application url in the address bar
+And I clicked on MyAccount dropdown
+And I selected Login option
+Then the system navigates to LoginPage
+      
+      
+3. Cucumber Plugin
+Ans: Right click on the Maven Project > Configure > Convert to Cucumber Project
+
+
+4. Cucumber Maven Dependencies
+Ans: Check your pom.xml file
+
+5. Components of Cucumber
+Ans: There are 3 major components 
+    i. feature file
+    
+    Feature:
+    
+    Scenario:
+      Given I open a Chrome Browser
+      And I Enter the application url in the address bar
+      And I clicked on MyAccount dropdown
+      And I selected Login option
+      Then the system navigates to LoginPage
+      
+   ii. Step Definition file
+   
+   This is a java class file which will define the steps created in the .feature file
+   @Given @When @And @But @Then
+   
+  iii. Runner File
+  Execution file. Junit Runner, TestNG Runner
+  
+6. Create a Maven Project and add the dependencies and convert the Maven Project to Cucumber Project
+
+7. Regular Expressions
+[a-zA-Z]{1,} - any number of alphabets
+\\d+ - any number of digits
+[a-zA-Z0-9]{1,} - this is alpha numeric
+(.*) - list
+[^\"]* - this represents anything
+
+
+
+
+
+
+
+
+
+
